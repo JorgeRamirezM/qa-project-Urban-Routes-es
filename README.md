@@ -51,3 +51,6 @@ Este proyecto es una aplicación diseñada para realizar pruebas de calidad (QA)
     `pytest`
 
 3.  Modifica el archivo data.py para personalizar las pruebas según sea necesario.
+
+Jorge Luis Ramirez Morales
+Cohort 26
