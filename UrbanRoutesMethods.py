@@ -13,10 +13,9 @@ class UrbanRoutesPage:
         self.from_field = (By.ID, 'from')
         self.to_field = (By.ID, 'to')
         self.request_taxi_button = (By.CSS_SELECTOR, ".button.round")
-        self.comfort_rate_icon = (By.XPATH, "//div[@class='tcard']/div[@class='tcard-title' and text()='Comfort']") #Modificado el localizador. No sé si sea asi porque la clase tcard active solo aparece hasta
-        # que se le da click a alguna tarifa, antes de eso, solo aparece como tcard, y si pongo directo la clase como tcard active arroja un error. Entonces, según yo, no hay manera de seleccionar la tarifa
-        #comfort mas que con la clase tcard-title junto con el texto. A final de cuentas, aunque modifique el localizador, me parece que es el mismo solo más alargado, más el localizador extra de abajo (el mismo que ya tenía arriba)
-        self.comfort_rate_icon_text = (By.XPATH, "//div[@class='tcard-title' and text()='Comfort']")
+        self.comfort_rate_icon = (By.XPATH, "//div[@class='tcard-title' and text()='Comfort']")
+        self.comfort_rate_icon_active = (By.XPATH, "//div[@class='tcard active']/div[@class='tcard-title']") #Añadido localizador tcard active. Creo que ahora sí entendí el punto.
+        #En caso de que no sea así, ya solicité un 1:1 con mi tutora, solo que hay disponibilidad hasta el lunes, asi que por lo pronto me adelanto a mandar esta corrección esperando que ahora sí sea la correcta.
         self.phone_field = (By.CLASS_NAME, 'np-text')
         self.phone_input = (By.ID, 'phone')
         self.phone_next_button = (By.XPATH, "//button[text()='Siguiente']")
@@ -63,7 +62,7 @@ class UrbanRoutesPage:
         WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(self.comfort_rate_icon)).click()
 
     def get_comfort_rate_icon_text(self):
-        return self.driver.find_element(*self.comfort_rate_icon_text).text
+        return self.driver.find_element(*self.comfort_rate_icon_active).text
 
     def select_comfort_rate(self):
         self.click_on_request_taxi_button()
