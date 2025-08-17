@@ -52,5 +52,9 @@ Este proyecto es una aplicación diseñada para realizar pruebas de calidad (QA)
 
 3.  Modifica el archivo data.py para personalizar las pruebas según sea necesario.
 
+### Demo
+
+https://drive.google.com/file/d/1kupjl4r3My6xO3UG_ppHsjA13V6b5eie/view?usp=sharing
+
 Jorge Luis Ramirez Morales
 Cohort 26

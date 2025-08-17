@@ -14,8 +14,7 @@ class UrbanRoutesPage:
         self.to_field = (By.ID, 'to')
         self.request_taxi_button = (By.CSS_SELECTOR, ".button.round")
         self.comfort_rate_icon = (By.XPATH, "//div[@class='tcard-title' and text()='Comfort']")
-        self.comfort_rate_icon_active = (By.XPATH, "//div[@class='tcard active']/div[@class='tcard-title']") #Añadido localizador tcard active. Creo que ahora sí entendí el punto.
-        #En caso de que no sea así, ya solicité un 1:1 con mi tutora, solo que hay disponibilidad hasta el lunes, asi que por lo pronto me adelanto a mandar esta corrección esperando que ahora sí sea la correcta.
+        self.comfort_rate_icon_active = (By.XPATH, "//div[@class='tcard active']/div[@class='tcard-title']")
         self.phone_field = (By.CLASS_NAME, 'np-text')
         self.phone_input = (By.ID, 'phone')
         self.phone_next_button = (By.XPATH, "//button[text()='Siguiente']")
