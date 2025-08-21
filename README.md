@@ -2,8 +2,6 @@
 
 Este proyecto es una aplicación diseñada para realizar pruebas de calidad (QA) y asegurar el correcto funcionamiento de un sistema relacionado con "Urban Routes", aplicación de movilidad.
 
-![](https://i.postimg.cc/Y96XHZ22/Urban-Routes.png)
-
 ## Estructura del Proyecto
 
 ### Archivos y Directorios Principales
@@ -57,4 +55,3 @@ Este proyecto es una aplicación diseñada para realizar pruebas de calidad (QA)
 https://drive.google.com/file/d/1kupjl4r3My6xO3UG_ppHsjA13V6b5eie/view?usp=sharing
 
 Jorge Luis Ramirez Morales
-Cohort 26
